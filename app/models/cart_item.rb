@@ -1,4 +1,13 @@
 class CartItem < ApplicationRecord
-  belongs_to :user
+  # no user for now
+  # belongs_to :user
   belongs_to :meal
+
+  before_create :set_quantity
+
+  private
+
+  def set_quantity
+    self.quantity = 1
+  end
 end

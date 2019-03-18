@@ -1,4 +1,4 @@
 json.data do
   json.meals @meals
-  json.cart []
+  json.cart @cart_items
 end
