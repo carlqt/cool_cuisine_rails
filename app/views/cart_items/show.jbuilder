@@ -1,3 +1,3 @@
 json.data do
-  json.cart @cart
+  json.partial! 'shared/cart_item', cart_item: @cart
 end
