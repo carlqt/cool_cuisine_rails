@@ -15,6 +15,8 @@ class CartItemsController < ActionController::API
   end
 
   def destroy
+    @cart_item = CartItem.find_by(meal_id: params[:meal_id])
+    @cart_item.destroy
   end
 
   private
