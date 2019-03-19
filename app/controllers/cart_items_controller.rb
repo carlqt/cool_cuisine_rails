@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CartItemsController < ActionController::API
   def show
     @cart = CartItem.first

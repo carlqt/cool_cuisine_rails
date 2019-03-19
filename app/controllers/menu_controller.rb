@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MenuController < ActionController::API
   def show
     @meals = Meal.all

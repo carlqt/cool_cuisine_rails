@@ -1,9 +1,11 @@
-json.(
+# frozen_string_literal: true
+
+json.call(
   meal,
   :id,
   :name,
   :description,
-  :image_url,
+  :image_url
 )
 
 # json.price humanized_money_with_symbol meal.price
